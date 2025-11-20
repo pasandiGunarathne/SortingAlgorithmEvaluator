@@ -93,8 +93,8 @@ public class SortingAppGUI extends JFrame {
         pack();
         setSize(900, 600);
         setLocationRelativeTo(null);
-        // try to load default logo if present
-        loadAndApplyLogo(new File("resources/logo.png"));
+        // try to load default logo if present (use absolute path as requested)
+        loadAndApplyLogo(new File("C:\\Users\\User\\SortingAlgorithmEvaluator\\resources\\logo.png"));
         setVisible(true);
     }
 
