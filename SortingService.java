@@ -17,7 +17,8 @@ public class SortingService {
             array.set(j + 1, key);
         }
     }
-// Shell Sort
+
+    // Shell Sort
     public void shellSort(List<Record> array) {
         if (array == null) return;
         int n = array.size();
@@ -66,7 +67,8 @@ public class SortingService {
         while (i < leftList.size()) array.set(k++, leftList.get(i++));
         while (j < rightList.size()) array.set(k++, rightList.get(j++));
     }
-// Quick Sort
+
+    // Quick Sort
     public void quickSort(List<Record> array, int low, int high) {
         if (array == null || array.size() == 0) return;
         if (low < high) {
@@ -88,7 +90,8 @@ public class SortingService {
         swap(array, i + 1, high);
         return i + 1;
     }
-  // Heap Sort
+
+    // Heap Sort
     public void heapSort(List<Record> array) {
         if (array == null) return;
         int n = array.size();
@@ -110,10 +113,11 @@ public class SortingService {
             heapify(array, n, largest);
         }
     }
-// Utility: swap two elements in the list
+
+    // Utility: swap two elements in the list
     private void swap(List<Record> array, int i, int j) {
         Record tmp = array.get(i);
         array.set(i, array.get(j));
-        array.set(j, tmp);
-    }
+        array.set(j, tmp);
+    }
 }
